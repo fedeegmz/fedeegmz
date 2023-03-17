@@ -1,0 +1,12 @@
+/* HEADER */
+
+header .profile-picture {
+    display: block;
+}
+
+/* MAIN */
+
+.projects {
+    display: flex;
+    flex-direction: row;
+}
