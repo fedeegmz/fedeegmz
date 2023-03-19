@@ -1,12 +1,61 @@
-/* HEADER */
+/* ### HEADER ### */
 
-header .profile-picture {
+/* # PROFILE PICTURE # */
+/* .profile-picture {
     display: block;
+    width: 30vw;
+    position: relative;
+    bottom: calc(42px + 27px + 22px);
+    left: calc(100vw - 223px - 15px);
 }
+.profile-picture img{
+    width: calc(144px + 64px + 15px);
+} */
+/* .titles {
+    position: absolute;
+    margin: 5px;
+} */
+/* .about {
+    position: absolute;
+    top: calc(144px + 10px);
+    width: calc(100vw - 30vw - 20px);
+    margin: 5px;
+} */
 
 /* MAIN */
 
+/* # PROJECTS # */
 .projects {
     display: flex;
     flex-direction: row;
+}
+.project-box {
+    flex-basis: 10rem;
+    flex-grow: 1;
+}
+.project-box__title {
+    font-size: 2rem;
+}
+.project-box__content {
+    display: block;
+}
+.project-box__content__img img {
+    width: 15vw;
+}
+.project-box__content > div {
+    display: flex;
+    justify-content: space-evenly;
+}
+.project-box__content__tech {
+    display: block;
+}
+/* .project-box__content__tech {
+    background-color: yellow;
+    display: inline-block;
+    position: relative;
+    left: calc(15vw + 8px);
+    top: -15vw;
+} */
+.project-box__content__tech .tech-box span {
+    background-color: blue;
 }

@@ -6,62 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 930px)">
 
     <title>Federico Gomez</title>
 </head>
 <body>
     <header>
-        <h1>Federico Gomez</h1>
-        <h2>Backend Developer</h2>
-        <h3>Python - Django - Django Rest Framework - FastAPI</h3>
+        <!-- <figure class="profile-picture">
+            <img src="./img/perfil.jpg" alt="Foto de perfil">
+        </figure> -->
 
-        <figure class="profile-picture">
-            <!-- <source media="(min-width: 768px)" srcset="./img/perfil.jpg"> -->
-            <img src="../img/perfil.jpg" alt="Foto de perfil">
-        </figure>
-        <section class="header-div"></section>
+        <section class="titles">
+            <h1>Federico Gomez</h1>
+            <h2>Backend Developer</h2>
+            <h3>Python - Django - Django Rest Framework - FastAPI</h3>
+        </section>
+        
+        <section class="about">
+            <p>
+                Me defino como una persona muy entusiasta, 
+                me gusta aprender cosas nuevas y superarme cada día.
+                Estudio programación, desde noviembre del 2021 me enfoco en Python; 
+                y actualmente estoy aprendiendo Django.
+                Como hobby me gusta el diseño y modelado para impresión 3D.
+            </p>
+        </section>
     </header>
-    <main>      
+    <main>
+        <h2 class="projects-title">Proyectos</h2>
         <section class="projects">
 
             <div class="project-box weather-landing">
                 <h3 class="project-box__title">
-                    <a href="https://federicogomez00.github.io/weather-landing/">weather-landing</a>
+                    <a href="#">weather-landing</a>
                 </h3>
                 
                 <div class="project-box__content">
-                    <figure><img src="../img/perfil.jpg" alt="Imagen ilustrativa del proyecto"></figure>
-                    <div class="project-box__content__desc">
-                        <p class="project-box__description">
-                            <a href="https://github.com/FedericoGomez00/weather-landing">GitHub</a>
-                            <br><strong>weather-landing</strong> es una landing page que consume una API,
-                            recibe datos del clima y los renderiza.
-                        </p>
+                    <div>
+                        <figure class="project-box__content__img">
+                            <img src="./img/perfil.jpg" alt="Imagen ilustrativa del proyecto">
+                        </figure>
+                        <div class="project-box__content__tech">
+                            <div class="tech-box">
+                                <span>Javascript</span>
+                            </div>
+                            <div class="tech-box">
+                                <span>HTML</span>
+                            </div>
+                            <div class="tech-box">
+                                <span>CSS</span>
+                            </div>
+                        </div>
                     </div>
+                    
+                    <p class="project-box__content__description">
+                        <a href="https://github.com/fedeegmz/weather-landing">GitHub</a>
+                        <br><strong>weather-landing</strong> es una landing page que consume una API,
+                        recibe datos del clima y los renderiza.
+                    </p>
                 </div>
             </div>
             <div class="project-box tomato_rest_api">
                 <h3 class="project-box__title">
-                    <a href="https://github.com/FedericoGomez00/tomato_rest_api">tomato_rest_api</a>
+                    <a href="https://github.com/fedeegmz/tomato_rest_api">tomato_rest_api</a>
                 </h3>
                 <div class="project-box__content">
-                    <figure><img src="../img/perfil.jpg" alt="Imagen ilustrativa del proyecto"></figure>
-                    <div class="project-box__content__desc">
-                        <p class="project-box__description">
-                            <strong>tomato_rest_api</strong> es un blog hecho en Django Rest Framework, 
-                            incluye endpoints donde se retornan los usuarios, los blogpost; 
-                            también endpoints para guardar blogposts en la DB, etc.
-                        </p>
+                    <div>
+                        <figure class="project-box__content__img">
+                            <img src="./img/perfil.jpg" alt="Imagen ilustrativa del proyecto">
+                        </figure>
+                        <div class="project-box__content__tech">
+                            <div class="tech-box">
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-box">
+                                <span>Django Rest Framework</span>
+                            </div>
+                        </div>
                     </div>
+                    
+                    <p class="project-box__description">
+                        <strong>tomato_rest_api</strong> es un blog hecho en Django Rest Framework, 
+                        incluye endpoints donde se retornan los usuarios, los blogpost; 
+                        también endpoints para guardar blogposts en la DB, etc.
+                    </p>
                 </div>
             </div>
             <div class="project-box wango">
                 <h3 class="project-box__title">
+                    <a href="https://github.com/fedeegmz/wango">wango</a>
+                </h3>
+                <div class="project-box__content">
+                    <div>
+                        <figure class="project-box__content__img">
+                            <img src="./img/perfil.jpg" alt="Imagen ilustrativa del proyecto">
+                        </figure>
+                        <div class="project-box__content__tech">
+                            <div class="tech-box">
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-box">
+                                <span>Django</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="project-box__description">
+                        <strong>wango</strong> es un blog hecho en Django. 
+                        Tiene una interfaz básica donde se puede hacer login-logout, 
+                        crear y eliminar blogposts.
+                    </p>
+                </div>
+            </div>
+
+            <!-- <div class="project-box wango">
+                <h3 class="project-box__title">
                     <a href="https://github.com/FedericoGomez00/wango">wango</a>
                 </h3>
                 <div class="project-box__content">
-                    <figure><img src="../img/perfil.jpg" alt="Imagen ilustrativa del proyecto"></figure>
+                    <figure><img src="./img/perfil.jpg" alt="Imagen ilustrativa del proyecto"></figure>
                     <div class="project-box__content__desc">
                         <p class="project-box__description">
                             <strong>wango</strong> es un blog hecho en Django. 
@@ -70,7 +133,7 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </section>
     </main>
