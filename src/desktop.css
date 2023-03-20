@@ -1,26 +1,33 @@
 /* ### HEADER ### */
 
-/* # PROFILE PICTURE # */
-/* .profile-picture {
-    display: block;
-    width: 30vw;
-    position: relative;
-    bottom: calc(42px + 27px + 22px);
-    left: calc(100vw - 223px - 15px);
+.personal-info {
+    display: flex;
+    justify-content: space-around;
 }
-.profile-picture img{
-    width: calc(144px + 64px + 15px);
-} */
-/* .titles {
-    position: absolute;
-    margin: 5px;
-} */
-/* .about {
-    position: absolute;
-    top: calc(144px + 10px);
-    width: calc(100vw - 30vw - 20px);
-    margin: 5px;
-} */
+.personal-info .contact {
+    display: block;
+    background-color: orange;
+    /* margin: 10px auto 0; */
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1.6rem;
+}
+.personal-info .contact button {
+    background-color: orange;
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 8px;
+}
+.personal-info .contact button:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+}
+.personal-info .contact div {
+    display: flex;
+}
+.personal-info .contact img {
+    width: 15px;
+}
 
 /* MAIN */
 
@@ -49,13 +56,10 @@
 .project-box__content__tech {
     display: block;
 }
-/* .project-box__content__tech {
-    background-color: yellow;
-    display: inline-block;
-    position: relative;
-    left: calc(15vw + 8px);
-    top: -15vw;
-} */
 .project-box__content__tech .tech-box span {
-    background-color: blue;
+    background-color: orange;
+    /* margin: 3px; */
+    /* padding: 3px; */
+    border: 1px solid;
+    border-radius: 8px;
 }
