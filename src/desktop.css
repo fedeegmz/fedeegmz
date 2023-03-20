@@ -7,7 +7,6 @@
 .personal-info .contact {
     display: block;
     background-color: orange;
-    /* margin: 10px auto 0; */
     border-radius: 10px;
     padding: 5px;
     font-size: 1.6rem;
@@ -58,8 +57,6 @@
 }
 .project-box__content__tech .tech-box span {
     background-color: orange;
-    /* margin: 3px; */
-    /* padding: 3px; */
     border: 1px solid;
     border-radius: 8px;
 }

@@ -9,6 +9,7 @@
   "author": "Federico Gomez gomez00federico@gmail.com",
   "license": "MIT",
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "node-fetch": "^3.3.1"
   }
 }

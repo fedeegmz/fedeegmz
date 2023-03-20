@@ -52,7 +52,6 @@ header h3 {
     border-radius: 10px;
     margin: 4px;
     padding: 5px;
-    /* width: calc(100vw - 8px); */
 }
 .project-box__title {
     color: black;

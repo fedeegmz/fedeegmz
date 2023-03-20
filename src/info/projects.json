@@ -1,0 +1,23 @@
+[
+    {
+        "title": "weather-landing",
+        "image": "",
+        "technologies": ["HTML", "CSS", "Javascript"],
+        "github": "",
+        "description": "weather-landing es una landing page que consume una API, recibe datos del clima y los renderiza."
+    },
+    {
+        "title": "tomato_rest_api",
+        "image": "",
+        "technologies": ["Python", "DRF"],
+        "github": "",
+        "description": "tomato_rest_api es un blog hecho en Django Rest Framework, incluye endpoints donde se retornan los usuarios, los blogpost; también endpoints para guardar blogposts en la DB, etc."
+    },
+    {
+        "title": "wango",
+        "image": "",
+        "technologies": ["Python", "Django"],
+        "github": "",
+        "description": "wango es un blog hecho en Django. Tiene una interfaz básica donde se puede hacer login-logout, crear y eliminar blogposts."
+    }
+]
