@@ -2,7 +2,7 @@
   "name": "fedeegmz",
   "version": "1.0.0",
   "description": "personal portfolio",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "deploy": "gh-pages -d src"
   },
