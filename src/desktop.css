@@ -17,23 +17,27 @@
 }
 .personal-info .contact div {
     margin: 1px;
-}
-.personal-info .contact a {
-    text-decoration: none;
-    color: black;
+    display: flex;
 }
 .personal-info .contact button {
-    background-color: orange;
+    background-color: blueviolet;
+    font-size: 1.9rem;
     padding: 5px;
     border: 2px solid;
     border-radius: 8px;
 }
+.personal-info .contact button a {
+    color: black;
+    text-decoration: none;
+}
 .personal-info .contact button:hover {
     cursor: pointer;
-    background-color: blueviolet;
+    background-color: orange;
 }
 .personal-info .contact .contact__a a {
     background-color: orange;
+    text-decoration: none;
+    color: black;
     padding: 5px;
     border: 2px solid;
     border-radius: 8px;
@@ -41,9 +45,6 @@
 .personal-info .contact .contact__a a:hover {
     cursor: pointer;
     background-color: blueviolet;
-}
-.personal-info .contact div {
-    display: flex;
 }
 .personal-info .contact img {
     width: 15px;
@@ -83,4 +84,11 @@
     padding: 2px;
     border: 1px solid;
     border-radius: 8px;
+}
+
+/* ### FOOTER ### */
+
+/* # MOBILE # */
+.mobile-footer {
+    display: none;
 }

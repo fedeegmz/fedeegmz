@@ -84,3 +84,48 @@ header h3 {
     background-color: orange;
     cursor: pointer;
 }
+
+/* ### FOOTER ### */
+
+/* # MOBILE # */
+.mobile-footer .contact {
+    display: block;
+    background-color: orange;
+    margin: 2px;
+    padding: 5px;
+    font-size: 1.4rem;
+}
+
+.mobile-footer .contact div {
+    display: inline-block;
+    margin: 1px;
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 8px;
+}
+.mobile-footer .contact a {
+    background-color: orange;
+    text-decoration: none;
+    color: black;
+}
+.mobile-footer .contact .contact__a a:hover {
+    cursor: pointer;
+}
+.mobile-footer .contact button {
+    background-color: blueviolet;
+    font-size: 1.8rem;
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 8px;
+}
+.mobile-footer .contact button a {
+    color: black;
+    text-decoration: none;
+}
+.mobile-footer .contact button:hover {
+    cursor: pointer;
+    background-color: orange;
+}
+.mobile-footer .contact img {
+    width: 12px;
+}
