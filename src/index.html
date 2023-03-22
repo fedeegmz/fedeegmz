@@ -7,6 +7,7 @@
 
     <script src="./assets/main.js"></script>
     <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 600px)"> -->
     <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 930px)">
 
     <title>Federico Gomez</title>
@@ -15,16 +16,18 @@
 
     <!-- ### HEADER ### -->
     <header id="header">
-        <!-- <figure class="profile-picture">
-            <img src="./img/perfil.jpg" alt="Foto de perfil">
-        </figure> -->
 
+        <!-- ## TITLES ## -->
         <section class="titles">
-            <h1>Federico Gomez</h1>
-            <h2>Backend Developer</h2>
-            <h3>Python - Django - Django Rest Framework - FastAPI - PostgreSql - MongoDB</h3>
+            <div>
+                <h1 class="name">Federico Gomez</h1>
+                <h2 class="username">@fedeegmz</h2>
+            </div>
+            <h2 class="profession">Backend Developer</h2>
+            <h3 class="tech-stack">Python - Django - Django Rest Framework - FastAPI - PostgreSql - MongoDB</h3>
         </section>
         
+        <!-- ## PERSONAL INFO ## -->
         <section class="personal-info">
             <div class="about">
                 <p>
@@ -37,7 +40,7 @@
             </div>
             <div class="contact">
                 <button>
-                    <a href="" target="_blank">
+                    <a href="https://drive.google.com/file/d/1LCIcynmx78SG2OF1hVoSN6D_BcgxL9g4/view?usp=share_link" target="_blank">
                         <strong>Download CV</strong>
                     </a>
                 </button>
@@ -70,9 +73,12 @@
 
     <!-- ### MAIN ### -->
     <main>
+
+        <!-- ## PROJECTS ## -->
         <h2 class="projects-title">Proyectos</h2>
         <section class="projects">
 
+            <!-- # weather-landing # -->
             <div class="project-box weather-landing">
                 <h3 class="project-box__title">weather-landing</h3>
                 
@@ -95,14 +101,15 @@
                     </div>
 
                     <p class="project-box__content__description">
-                        <a href="">Ver</a>
+                        <a href="https://fedeegmz.github.io/weather-landing/" target="_blank">Ver</a>
                         <a href="https://github.com/fedeegmz/weather-landing" target="_blank">GitHub</a>
                         <br><strong>weather-landing</strong> es una landing page que consume una API,
                         recibe datos del clima y los renderiza.
                     </p>
                 </div>
-            
             </div>
+
+            <!-- # tomato_rest_api # -->
             <div class="project-box tomato_rest_api">
                 <h3 class="project-box__title">tomato_rest_api</h3>
                 <div class="project-box__content">
@@ -129,6 +136,7 @@
                 </div>
             </div>
             
+            <!-- # wango # -->
             <div class="project-box wango">
                 <h3 class="project-box__title">wango</h3>
                 <div class="project-box__content">
@@ -154,29 +162,17 @@
                     </p>
                 </div>
             </div>
-
-            <!-- <div class="project-box wango">
-                <h3 class="project-box__title">
-                    <a href="https://github.com/FedericoGomez00/wango">wango</a>
-                </h3>
-                <div class="project-box__content">
-                    <figure><img src="./img/perfil.jpg" alt="Imagen ilustrativa del proyecto"></figure>
-                    <div class="project-box__content__desc">
-                        <p class="project-box__description">
-                            <strong>wango</strong> es un blog hecho en Django. 
-                            Tiene una interfaz básica donde se puede hacer login-logout, 
-                            crear y eliminar blogposts.
-                        </p>
-                    </div>
-                </div>
-            </div> -->
-
         </section>
     </main>
     <footer>
+
+        <!-- ## MOBILE FOOTER ## -->
         <section class="mobile-footer">
             <div class="contact">
-                <button><strong>Download CV</strong></button>
+                <a href="https://drive.google.com/file/d/1LCIcynmx78SG2OF1hVoSN6D_BcgxL9g4/view?usp=share_link" target="_blank">
+                    <button><strong>Download CV</strong></button>
+                </a>
+                
                 <div class="contact__a">
                     <a href="https://www.linkedin.com/in/federico00gomez/" target="_blank">LinkedIn</a>
                 </div>

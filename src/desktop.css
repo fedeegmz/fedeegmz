@@ -1,5 +1,18 @@
 /* ### HEADER ### */
 
+/* # TITLES # */
+.titles div {
+    display: flex;
+}
+.username {
+    font-size: 3rem;
+    color: orange;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+}
+
+/* # PERSONAL INFO # */
 .personal-info {
     display: flex;
     justify-content: space-around;

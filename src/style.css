@@ -15,14 +15,17 @@ header h1, h2, h3{
     color: white;
     margin: 10px;
 }
-header h1 {
+.name {
     font-size: 4rem;
 }
-header h2 {
+.username {
+    display: none;
+}
+.profession {
     font-size: 3rem;
     color: blueviolet;
 }
-header h3 {
+.tech-stack {
     font-size: 2rem;
 }
 
