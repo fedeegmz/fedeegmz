@@ -18,8 +18,15 @@ header h1, h2, h3{
 .name {
     font-size: 4rem;
 }
+.titles div {
+    display: flex;
+}
 .username {
-    display: none;
+    font-size: 3rem;
+    color: orange;
+    display: inline-block;
+    position: relative;
+    top: 5px;
 }
 .profession {
     font-size: 3rem;
@@ -33,10 +40,11 @@ header h1, h2, h3{
     padding: 8px;
 }
 .personal-info .about {
-    background-color: blueviolet;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 15px;
     font-size: 1.8rem;
+    border: 3px solid blueviolet;
     border-radius: 10px;
 }
 .personal-info .contact {
