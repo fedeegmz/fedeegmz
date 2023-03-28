@@ -33,10 +33,11 @@ header h1, h2, h3{
     padding: 8px;
 }
 .personal-info .about {
-    border-radius: 10px;
     background-color: blueviolet;
-    padding: 5px;
-    font-size: 1.6rem;
+    color: white;
+    padding: 15px;
+    font-size: 1.8rem;
+    border-radius: 10px;
 }
 .personal-info .contact {
     display: none;
