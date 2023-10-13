@@ -1,0 +1,55 @@
+.contact {
+    display: block;
+    background-color: rgb(65, 0, 65);
+    color: white;
+    // margin: 2px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1.8rem;
+}
+.contact div {
+    margin: 1px;
+    display: flex;
+    background-color: transparent;
+}
+.contact button {
+    background-color: blueviolet;
+    font-size: 1.9rem;
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 8px;
+}
+button a {
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+}
+button:hover {
+    cursor: pointer;
+    background-color: orange;
+}
+.contact__a a {
+    background-color: blueviolet;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 8px;
+}
+.contact__a a:hover {
+    cursor: pointer;
+}
+.contact__icon a {
+    background-color: transparent;
+}
+.contact__icon span {
+    background-color: transparent;
+}
+.contact__icon img {
+    background-color: white;
+    margin: 3px;
+    padding: 3px;
+    width: 20px;
+    border: 1px solid blueviolet;
+    border-radius: 26px;
+}
