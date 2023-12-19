@@ -5,7 +5,7 @@ const AboutMeComponent = () => {
     return (
         <div className="about">
             <p>
-            Mi nombre es Federico Gomez, tengo 22 años y soy desarrollador Backend con Python.
+            Mi nombre es Federico Gomez, tengo 23 años y soy desarrollador Backend con Python.
             Entre las tecnologías que manejo se encuentran FastAPI, Django, Django Rest Framework (DRF), MongoDB, PostgreSQL.
             Ingresando a mi perfil en la plataforma LinkedIn tendrán acceso total tanto a mi información personal como a mis datos acedémicos, 
             información que les permitirá adentrarse en la formación que he adquirido y continuo adquiriendo constantemente, 
