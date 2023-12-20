@@ -1,11 +1,10 @@
-# Federico Gomez
-
 ## fedeegmz
 
-### Hey, I'm a backend developer
+### Hey, I'm Federico Gomez 👋
 
-I'm from Argentina.  
-I made many backend apps with FastAPI, Django and Django Rest Framwork.
+I'm a backend developer from Argentina. I made many backend apps with FastAPI, Django and Django Rest Framwork.  
+My most important projects are available here. You can find some CRUD apps and more complex apps.  
+The better projects (for me) are pinned 👇👇
 
 You can find me on:
 
