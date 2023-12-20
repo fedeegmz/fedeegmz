@@ -5,18 +5,19 @@
 ### Hey, I'm Federico Gomez 👋
 
 I'm a **backend developer** from Argentina. 🇦🇷  
-I made many backend apps with FastAPI, Django and Django Rest Framwork. My most important projects are available here. You can find some CRUD apps and more complex apps.  
-The better projects (for me) are **pinned** 👇👇
+I made many backend apps with FastAPI, Django and Django Rest Framework.  
+My most important projects are available here. You can find some CRUD apps and more complex apps.  
+The better repositories are **pinned** 👇👇
 
-### Skills
-
-- Python
-- FastAPI
-- Django
-- MongoDB
-- MySQL
-- PostgreSQL
-- Javascript
+```json
+    {
+        "skills": [
+            "Python", "FastAPI", "Django",
+            "MongoDB", "MySQL", "PostgreSQL",
+            "Javascript"
+        ]
+    }
+```
 
 ### Contact
 
