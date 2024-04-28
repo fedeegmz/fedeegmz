@@ -6,7 +6,7 @@ const ContactComponent = () => {
         <div className='contact'>
             <button>
                 <a 
-                    href="https://drive.google.com/file/d/13sEpsT8YVY_hrGYaQi59xxicncvK-qhp/view?usp=sharing"
+                    href="https://drive.google.com/file/d/19UVPWZJg2INxwVyzJ750pgKikKDfvi1h/view?usp=sharing"
                     rel='noreferrer'
                     target='_blank'
                 >
