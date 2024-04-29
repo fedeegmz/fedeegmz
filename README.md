@@ -21,6 +21,6 @@ The better repositories are **pinned** 👇👇
 
 ### Contact
 
-- [My website](https://fedeegmz-lhheu6nfb-fedeegmz.vercel.app/)
+- [My website](https://fedeegmz.tech/)
 - [GitHub as @fedeegmz](https://github.com/fedeegmz) **(You're here)**
 - [LinkedIn](https://www.linkedin.com/in/federico00gomez/)
