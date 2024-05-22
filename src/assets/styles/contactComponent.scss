@@ -1,0 +1,11 @@
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact__item {
+    margin: 3px;
+}
+.contact__item a {
+    color: black;
+    text-decoration: none;
+}

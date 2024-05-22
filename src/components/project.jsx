@@ -1,54 +1,43 @@
+import '../assets/styles/projectComponent.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../styles/project.scss';
 
 const ProjectComponent = ({ projectName, projectDescription, imgUrl, deployUrl, repoUrl, techstack }) => {
     return (
-        <div>
-            <div className="project-box">
-                <h3 className="project-box__title"> { projectName } </h3>
-
-                <div className="project-box__content">
-                    <div>
-                        {
-                            imgUrl !== "" ?
-                                <figure className="project-box__content__img">
-                                    <img alt='Imagen ilustrativa del proyecto' src={ imgUrl }></img>
-                                </figure>
-                                :
-                                null
-                        }
-                        <ul className="project-box__content__tech">
-                            {
-                                techstack.map((tech) => {
-                                    return (
-                                        <div className='tech-box'>
-                                            <li>{ tech }</li>
-                                        </div>
-                                    )
-                                })
-                            }
-                        </ul>
-                    </div>
-
-                    <p className="project-box__content__description">
-                        { projectDescription }
-                        <br></br>
-                        <br></br>
-                        {
-                            repoUrl !== "" ?
-                                <a href={ repoUrl } rel='noreferrer' target='_blank'>GitHub</a>
-                                :
-                                null
-                        }
-                        {
-                            deployUrl === "" ?
-                                null
-                                :
-                                <a href={ deployUrl } rel='noreferrer' target='_blank'>Ver</a>
-                        }
-                    </p>
-                </div>
+        <div className="card project-box" style={{width: "25rem"}}>
+            {
+                imgUrl !== "" && <img src={ imgUrl } className="card-img-top" alt="Imagen ilustrativa del proyecto"/>
+            }
+            <div className="card-body">
+                <h5 className="card-title">{ projectName }</h5>
+                <p className="card-text">
+                    { projectDescription }
+                    <br />
+                    <strong>[{techstack}]</strong>
+                </p>
+                {
+                    repoUrl !== "" ?
+                        <a
+                            className = "btn btn-primary"
+                            href = { repoUrl }
+                            rel = "noreferrer"
+                            target = "_blank"
+                        >GitHub</a>
+                        :
+                        null
+                }
+                {
+                    deployUrl === "" ?
+                        null
+                        :
+                        <a
+                            className = "btn btn-primary"
+                            href = { deployUrl }
+                            rel = "noreferrer"
+                            target = "_blank"
+                        >Ver</a>
+                        
+                }
             </div>
         </div>
     );

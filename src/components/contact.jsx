@@ -1,54 +1,47 @@
+import '../assets/styles/contactComponent.scss';
 import React from 'react';
-import '../styles/contact.scss'
 
 const ContactComponent = () => {
     return (
         <div className='contact'>
-            <button>
-                <a 
-                    href="https://drive.google.com/file/d/19UVPWZJg2INxwVyzJ750pgKikKDfvi1h/view?usp=sharing"
-                    rel='noreferrer'
-                    target='_blank'
-                >
-                    Download CV
-                </a>
-            </button>
-            <div className="contact__a">
+            <div className="contact__item">
                 <a
                     href="https://www.linkedin.com/in/federico00gomez/"
                     rel='noreferrer'
                     target='_blank'
-                >LinkedIn</a>
+                >
+                    <i class="bi bi-linkedin"></i>
+                </a>
             </div>
-            <div className="contact__a">
+            <div className="contact__item">
                 <a
                     href="https://github.com/fedeegmz"
                     rel='noreferrer'
                     target='_blank'
-                >GitHub</a>
+                >
+                    <i class="bi bi-github"></i>
+                </a>
             </div>
-            <div className="contact__icon">
+            <div className="contact__item">
                 <a
                     href="mailto:gomez00federico@gmail.com"
                     rel='noreferrer'
                     target='_blank'
                 >
-                    <img src="https://i.ibb.co/ZMMP40P/email.png" alt="Icono de Gmail"/>
+                    <i class="bi bi-envelope"></i>
                 </a>
-                <span>gomez00federico@gmail.com</span>
             </div>
-            <div className="contact__icon">
+            <div className="contact__item">
                 <a
                     href="tel:+542302216476"
                     rel='noreferrer'
                     target='_blank'
                 >
-                    <img src="https://i.ibb.co/m0kfsrr/whatsapp.png" alt="Icono de Whatsapp"/>
+                    <i class="bi bi-whatsapp"></i>
                 </a>
-                <span>(+54)2302 216 476</span>
             </div>
-            <div className="contact__icon">
-                <img src="https://i.ibb.co/hxNKhCh/ubicacion.png" alt="Icono de ubicacion"/>
+            <div className="contact__item">
+                <i class="bi bi-geo-alt"></i>
                 <span>Cordoba, Córdoba, Argentina</span>
             </div>
         </div>

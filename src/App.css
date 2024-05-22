@@ -2,27 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: black;
 }
 html {
-    font-size: 62.5%;
-    margin: 5px;
-    min-width: 270px;
+    /* font-size: 62.5%; */
+    min-width: 350px;
 }
-
-.personal-info {
-    display: flex;
-    justify-content: space-around;
-    padding: 8px;
-}
-
-.projects-title {
-    font-size: 2.4rem;
+.App {
     color: white;
+    background-color: black;
 }
-.projects {
-    display: flex;
-    flex-direction: column;
-}
-
-
