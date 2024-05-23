@@ -3,9 +3,16 @@
     flex-wrap: wrap;
 }
 .contact__item {
+    color: darkgray;
     margin: 3px;
 }
-.contact__item a {
+.contact__item:hover {
     color: black;
+}
+.contact__item a {
+    color: darkgray;
     text-decoration: none;
+}
+.contact__item a:hover {
+    color: black;
 }

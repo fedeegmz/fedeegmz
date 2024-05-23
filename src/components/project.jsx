@@ -1,38 +1,42 @@
 import '../assets/styles/projectComponent.scss';
+
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ProjectComponent = ({ projectName, projectDescription, imgUrl, deployUrl, repoUrl, techstack }) => {
+import { ProjectInfo } from '../models/projectInfo.class';
+
+
+const ProjectComponent = ({ data }) => {
     return (
         <div className="card project-box" style={{width: "25rem"}}>
-            {
-                imgUrl !== "" && <img src={ imgUrl } className="card-img-top" alt="Imagen ilustrativa del proyecto"/>
-            }
             <div className="card-body">
-                <h5 className="card-title">{ projectName }</h5>
+                <h5 className="card-title">{ data.name }</h5>
                 <p className="card-text">
-                    { projectDescription }
-                    <br />
-                    <strong>[{techstack}]</strong>
+                    { data.description && data.description }
+                    { data.description && <br /> }
+                    { data.techstack && 
+                        (
+                            <strong>
+                                [{ data.techstack }]
+                            </strong>
+                        )
+                    }
                 </p>
+                
                 {
-                    repoUrl !== "" ?
+                    data.repoUrl &&
                         <a
                             className = "btn btn-primary"
-                            href = { repoUrl }
+                            href = { data.repoUrl }
                             rel = "noreferrer"
                             target = "_blank"
                         >GitHub</a>
-                        :
-                        null
                 }
                 {
-                    deployUrl === "" ?
-                        null
-                        :
+                    data.deployUrl &&
                         <a
                             className = "btn btn-primary"
-                            href = { deployUrl }
+                            href = { data.deployUrl }
                             rel = "noreferrer"
                             target = "_blank"
                         >Ver</a>
@@ -44,12 +48,7 @@ const ProjectComponent = ({ projectName, projectDescription, imgUrl, deployUrl, 
 };
 
 ProjectComponent.propTypes = {
-    projectName: PropTypes.string.isRequired,
-    projectDescription: PropTypes.string.isRequired,
-    imgUrl: PropTypes.string,
-    deployUrl: PropTypes.string,
-    repoUrl: PropTypes.string,
-    techstack: PropTypes.array.isRequired
+    data: PropTypes.instanceOf(ProjectInfo)
 };
 
 export default ProjectComponent;

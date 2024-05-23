@@ -1,5 +1,7 @@
+import '../assets/styles/titlesComponent.scss';
+
 import React from 'react';
-import '../styles/titles.scss';
+
 
 const TitlesComponent = () => {
     return (

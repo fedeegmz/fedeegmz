@@ -1,6 +1,6 @@
-// import '../styles/aboutMe.scss';
 import React from 'react';
 import ContactComponent from './contact';
+
 
 const AboutMeComponent = () => {
     return (
@@ -9,7 +9,7 @@ const AboutMeComponent = () => {
                 <ContactComponent></ContactComponent>
             </div>
             <div className="card-body">
-                <h5 className="card-title">About Me</h5>
+                <h5 className="card-title">Sobre Mi</h5>
                 <p className="card-text">
                 Mi nombre es Federico Gomez, tengo 23 años y soy desarrollador Backend con Python.
                 Entre las tecnologías que manejo se encuentran FastAPI, Django, Django Rest Framework (DRF), MongoDB, PostgreSQL.
@@ -28,7 +28,7 @@ const AboutMeComponent = () => {
                     href = "https://drive.google.com/file/d/19UVPWZJg2INxwVyzJ750pgKikKDfvi1h/view?usp=sharing"
                     rel = "noreferrer"
                     target = "_blank"
-                >Download CV</a>
+                >Descargar CV</a>
             </div>
         </div>
     )

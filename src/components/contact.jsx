@@ -1,5 +1,7 @@
 import '../assets/styles/contactComponent.scss';
+
 import React from 'react';
+
 
 const ContactComponent = () => {
     return (
@@ -10,7 +12,7 @@ const ContactComponent = () => {
                     rel='noreferrer'
                     target='_blank'
                 >
-                    <i class="bi bi-linkedin"></i>
+                    <i className="bi bi-linkedin"></i>
                 </a>
             </div>
             <div className="contact__item">
@@ -19,7 +21,7 @@ const ContactComponent = () => {
                     rel='noreferrer'
                     target='_blank'
                 >
-                    <i class="bi bi-github"></i>
+                    <i className="bi bi-github"></i>
                 </a>
             </div>
             <div className="contact__item">
@@ -28,7 +30,7 @@ const ContactComponent = () => {
                     rel='noreferrer'
                     target='_blank'
                 >
-                    <i class="bi bi-envelope"></i>
+                    <i className="bi bi-envelope"></i>
                 </a>
             </div>
             <div className="contact__item">
@@ -37,11 +39,11 @@ const ContactComponent = () => {
                     rel='noreferrer'
                     target='_blank'
                 >
-                    <i class="bi bi-whatsapp"></i>
+                    <i className="bi bi-whatsapp"></i>
                 </a>
             </div>
             <div className="contact__item">
-                <i class="bi bi-geo-alt"></i>
+                <i className="bi bi-geo-alt"></i>
                 <span>Cordoba, Córdoba, Argentina</span>
             </div>
         </div>
