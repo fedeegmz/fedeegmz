@@ -7,6 +7,7 @@ import { ProjectInfo } from '../models/projectInfo.class';
 
 
 const ProjectComponent = ({ data }) => {
+    
     return (
         <div className="card project-box" style={{width: "25rem"}}>
             <div className="card-body">

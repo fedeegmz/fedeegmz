@@ -13,6 +13,7 @@ import bsaleairlineProjectData from '../assets/data/bsaleairlineProjectData';
 
 
 function HomePage() {
+
     return (
         <div className="main-app">
             <section className="titles">
@@ -35,7 +36,8 @@ function HomePage() {
                 </div>
             </main>
         </div>
-    )};
+    )
+};
 
 // HomePage.propTypes = {}
 

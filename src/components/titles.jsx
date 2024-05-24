@@ -4,6 +4,7 @@ import React from 'react';
 
 
 const TitlesComponent = () => {
+    
     return (
         <section className="titles">
             <div>

@@ -4,6 +4,7 @@ import React from 'react';
 
 
 const ContactComponent = () => {
+    
     return (
         <div className='contact'>
             <div className="contact__item">
