@@ -15,13 +15,17 @@ const ProjectComponent = ({ data }) => {
                 <p className="card-text">
                     { data.description && data.description }
                     { data.description && <br /> }
-                    { data.techstack && 
-                        (
-                            <strong>
-                                [{ data.techstack }]
-                            </strong>
-                        )
+                    
+                    { data.techstack.map(
+                        item =>
+                            <span
+                                className = "badge rounded-pill text-bg-dark"
+                                style = {{"margin": "2px"}}
+                            >
+                                {item}
+                            </span>)
                     }
+                    
                 </p>
                 
                 {

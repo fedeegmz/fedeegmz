@@ -3,7 +3,7 @@ export class ProjectInfo {
     description = "";
     repoUrl = "";
     deployUrl = "";
-    techstack = "";
+    techstack = [];
 
     constructor(name, description, repoUrl, deployUrl, techstack) {
         this.name = name;
