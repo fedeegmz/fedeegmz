@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ContactComponent from './contact';
 
 import ageCalculator from '../utils/ageCalculator';
+import copyClipboard from '../utils/copyClipboard';
 
 
 const AboutMeComponent = () => {
+    const [copiedClipboard, setCopiedClipboard] = useState(false);
     const myBirthDate = new Date("Nov 1, 2000");
 
     return (
@@ -29,10 +31,23 @@ const AboutMeComponent = () => {
                 Personalmente disfruto a la hora de aprender cosas nuevas y considero a los desafíos diarios como retos que se me presentan a la hora de llevar a cabo un proyecto, 
                 buscando siempre la forma de resolverlo de la manera más eficiente, aplicando todas las herramientas que tengo.
                 </p>
-                
+                <button
+                    className = 'btn btn-dark mx-2'
+                    onClick={() => {
+                        copyClipboard("gomez00federico@gmail.com");
+                        setCopiedClipboard(true);
+                    }}
+                >
+                    { copiedClipboard ?
+                        <i class="bi bi-clipboard-check mx-1"></i>
+                        :
+                        <i class="bi bi-copy mx-1"></i>
+                    }
+                    gomez00federico@gmail.com
+                </button>
                 <a
                     className = "btn btn-primary"
-                    href = "https://drive.google.com/file/d/1MT38kZ1SkvckVr9nRyEkndcSFaCtuukJ/view?usp=sharing"
+                    href = "https://drive.google.com/file/d/1FfNaj9HIt7C8srFBO2vP27POkda5Qr4C/view?usp=sharing"
                     rel = "noreferrer"
                     target = "_blank"
                 >Descargar CV</a>

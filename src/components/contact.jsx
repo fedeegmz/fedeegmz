@@ -26,24 +26,6 @@ const ContactComponent = () => {
                 </a>
             </div>
             <div className="contact__item">
-                <a
-                    href="mailto:gomez00federico@gmail.com"
-                    rel='noreferrer'
-                    target='_blank'
-                >
-                    <i className="bi bi-envelope"></i>
-                </a>
-            </div>
-            <div className="contact__item">
-                <a
-                    href="tel:+542302216476"
-                    rel='noreferrer'
-                    target='_blank'
-                >
-                    <i className="bi bi-whatsapp"></i>
-                </a>
-            </div>
-            <div className="contact__item">
                 <i className="bi bi-geo-alt"></i>
                 <span>Cordoba, Córdoba, Argentina</span>
             </div>
