@@ -7,8 +7,8 @@ import TitlesComponent from '../components/titles';
 import AboutMeComponent from '../components/aboutMe';
 import ProjectComponent from '../components/project';
 
+import youtubePydanticModelsProjectData from '../assets/data/youtubePydanticModelsProjectData';
 import wardProjectData from '../assets/data/wardProjectData';
-import shopsocialProjectData from '../assets/data/shopsocialProjectData';
 import bsaleairlineProjectData from '../assets/data/bsaleairlineProjectData';
 
 
@@ -24,10 +24,10 @@ function HomePage() {
                 <h2 className="projects-title">Proyectos</h2>
                 <div className="d-flex flex-wrap">
                     <ProjectComponent
-                        data = { wardProjectData }
+                        data = { youtubePydanticModelsProjectData }
                     ></ProjectComponent>
                     <ProjectComponent
-                        data = { shopsocialProjectData }
+                        data = { wardProjectData }
                     ></ProjectComponent>
                     <ProjectComponent
                         data = { bsaleairlineProjectData }

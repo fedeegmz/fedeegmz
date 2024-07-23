@@ -31,7 +31,7 @@ const ProjectComponent = ({ data }) => {
                 {
                     data.repoUrl &&
                         <a
-                            className = "btn btn-primary"
+                            className = "btn btn-primary m-1"
                             href = { data.repoUrl }
                             rel = "noreferrer"
                             target = "_blank"
@@ -40,7 +40,7 @@ const ProjectComponent = ({ data }) => {
                 {
                     data.deployUrl &&
                         <a
-                            className = "btn btn-primary"
+                            className = "btn btn-primary m-1"
                             href = { data.deployUrl }
                             rel = "noreferrer"
                             target = "_blank"

@@ -20,7 +20,6 @@ const AboutMeComponent = () => {
                 Mi nombre es Federico Gomez, tengo {ageCalculator(myBirthDate)} años y soy desarrollador Backend con Python.
                 Me especializo en desarrollo de API's utilizando <strong>FastAPI</strong>. Además he desarrollado algunas aplicaiones con Django y Django Rest Framework (DRF).
                 A la hora de trabajar con bases de datos, tengo experiencia con <strong>MongoDB</strong>, MySQL, PostgreSQL y SQLite.
-                Como complemento, dedico tiempo a aprender <strong>React JS</strong> para entender mejor que necesita tener una buena API.
                 <br />
                 Ingresando a mi perfil en la plataforma LinkedIn tendrán acceso total tanto a mi información personal como a mis datos acedémicos, 
                 información que les permitirá adentrarse en la formación que he adquirido y continuo adquiriendo constantemente, 
@@ -47,7 +46,7 @@ const AboutMeComponent = () => {
                 </button>
                 <a
                     className = "btn btn-primary"
-                    href = "https://drive.google.com/file/d/1FfNaj9HIt7C8srFBO2vP27POkda5Qr4C/view?usp=sharing"
+                    href = "https://drive.google.com/drive/folders/1qhERX9MZIdZ9XJuvQpQn2cswsyEwYB6H?usp=sharing"
                     rel = "noreferrer"
                     target = "_blank"
                 >Descargar CV</a>
