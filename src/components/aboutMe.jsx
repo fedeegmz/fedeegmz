@@ -19,7 +19,7 @@ const AboutMeComponent = () => {
                 <p className="card-text">
                 Mi nombre es Federico Gomez, tengo {ageCalculator(myBirthDate)} años y soy desarrollador Backend con Python.
                 Me especializo en desarrollo de API's utilizando <strong>FastAPI</strong>. Además he desarrollado algunas aplicaiones con Django y Django Rest Framework (DRF).
-                A la hora de trabajar con bases de datos, tengo experiencia con <strong>MongoDB</strong>, MySQL, PostgreSQL y SQLite.
+                A la hora de trabajar con bases de datos, tengo experiencia con <strong>PostgreSQL</strong>, MongoDB, MySQL y SQLite.
                 <br />
                 Ingresando a mi perfil en la plataforma LinkedIn tendrán acceso total tanto a mi información personal como a mis datos acedémicos, 
                 información que les permitirá adentrarse en la formación que he adquirido y continuo adquiriendo constantemente, 
