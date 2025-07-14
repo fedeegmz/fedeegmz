@@ -1,0 +1,20 @@
+[project]
+name = "fedeegmz"
+version = "0.1.0"
+description = "Personal protfolio"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.116.1",
+    "jinja2>=3.1.6",
+    "motor>=3.7.1",
+    "pydantic>=2.11.7",
+    "pydantic-settings>=2.10.1",
+]
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "pre-commit>=4.2.0",
+    "ruff>=0.12.3",
+]
