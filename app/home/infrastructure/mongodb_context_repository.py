@@ -14,7 +14,7 @@ class MongoDbContextRepository(ContextRepository):
 
     @override
     async def get_context(self) -> Context | None:
-        context = await self.collection.find({}, session=self.db_session)
-        if len(context) > 0:
-            return Context(**context[0])
+        context = await self.collection.find_one({}, session=self.db_session)
+        if context is not None:
+            return Context(**context)
         return None

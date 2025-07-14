@@ -17,5 +17,5 @@ async def root(
     return templates.TemplateResponse(
         request=request,
         name="index.html",
-        context=context.model_dump(),
+        context=context.model_dump() if context else {},
     )
