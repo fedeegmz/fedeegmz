@@ -1,11 +1,11 @@
 from pydantic import BaseModel
 
-from app.home.domain.status import Status
+from app.context.domain.status import Status
 
 
 class Project(BaseModel):
     title: str
     description: str
     status: Status
-    href: str
+    url: str
     tech_stack: list[str]

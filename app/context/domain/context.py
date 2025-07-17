@@ -1,9 +1,9 @@
 from pydantic import BaseModel
 
-from app.home.domain.action import Action
-from app.home.domain.contact import Contact
-from app.home.domain.project import Project
-from app.home.domain.technology import Technology
+from app.context.domain.action import Action
+from app.context.domain.contact import Contact
+from app.context.domain.project import Project
+from app.context.domain.technology import Technology
 
 
 class Context(BaseModel):

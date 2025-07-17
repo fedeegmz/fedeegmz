@@ -1,10 +1,12 @@
 from contextlib import asynccontextmanager
 from typing import AsyncGenerator
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
+from fastapi.responses import HTMLResponse
 
-from app.home.infrastructure.home_router import router as home_router
+from app.context.infrastructure.di import ContextRepositoryDi
 from app.shared.infrastructure.di.database import db_client
+from app.shared.infrastructure.di.templates import TemplatesDi
 from app.shared.infrastructure.exception_handler import exception_handler
 
 
@@ -18,4 +20,16 @@ async def lifespan(_: FastAPI) -> AsyncGenerator[None, None]:
 app = FastAPI(lifespan=lifespan)
 exception_handler(app)
 
-app.include_router(home_router)
+
+@app.get("/", response_class=HTMLResponse)
+async def root(
+    request: Request,
+    templates: TemplatesDi,
+    context_repository: ContextRepositoryDi,
+):
+    context = await context_repository.get_context()
+    return templates.TemplateResponse(
+        request=request,
+        name="index.html",
+        context=context.model_dump() if context else {},
+    )

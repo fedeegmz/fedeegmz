@@ -2,8 +2,10 @@ from typing import Annotated
 
 from fastapi import Depends
 
-from app.home.domain.context_repository import ContextRepository
-from app.home.infrastructure.mongodb_context_repository import MongoDbContextRepository
+from app.context.domain.context_repository import ContextRepository
+from app.context.infrastructure.mongodb_context_repository import (
+    MongoDbContextRepository,
+)
 from app.shared.infrastructure.di.database import DbSessionDi
 
 

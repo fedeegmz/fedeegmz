@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from app.home.domain.context import Context
+from app.context.domain.context import Context
 
 
 class ContextRepository(ABC):

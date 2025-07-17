@@ -4,5 +4,5 @@ from pydantic import BaseModel
 class Contact(BaseModel):
     title: str
     icon: str
-    href: str
-    target: str | None = None
+    url: str
+    is_external_app: bool = False

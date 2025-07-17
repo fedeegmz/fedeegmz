@@ -2,9 +2,9 @@ from typing import override
 
 from pymongo.asynchronous.client_session import AsyncClientSession
 
+from app.context.domain.context import Context
+from app.context.domain.context_repository import ContextRepository
 from app.core.settings import settings
-from app.home.domain.context import Context
-from app.home.domain.context_repository import ContextRepository
 
 
 class MongoDbContextRepository(ContextRepository):
