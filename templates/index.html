@@ -1,5 +1,9 @@
+{% from "components/chip.html" import chip %}
+{% from "components/button.html" import button %}
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -41,16 +45,19 @@
             width: 100%;
             height: 100%;
             background: radial-gradient(circle at 20% 50%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
-            radial-gradient(circle at 80% 20%, rgba(168, 85, 247, 0.08) 0%, transparent 50%),
-            radial-gradient(circle at 40% 80%, rgba(192, 132, 252, 0.06) 0%, transparent 50%);
+                radial-gradient(circle at 80% 20%, rgba(168, 85, 247, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(192, 132, 252, 0.06) 0%, transparent 50%);
             z-index: -1;
             animation: pulse 8s ease-in-out infinite;
         }
 
         @keyframes pulse {
-            0%, 100% {
+
+            0%,
+            100% {
                 opacity: 0.3;
             }
+
             50% {
                 opacity: 0.8;
             }
@@ -166,42 +173,6 @@
             display: flex;
             gap: 1rem;
             animation: fadeInUp 1s ease-out 0.6s both;
-        }
-
-        .btn {
-            padding: 0.75rem 2rem;
-            border: none;
-            border-radius: 8px;
-            font-weight: 500;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, var(--primary-violet), var(--secondary-violet));
-            color: white;
-            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: var(--primary-violet);
-            border: 2px solid var(--primary-violet);
-        }
-
-        .btn-outline:hover {
-            background: var(--primary-violet);
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
         }
 
         .hero-visual {
@@ -328,15 +299,6 @@
             gap: 0.5rem;
         }
 
-        .tech-tag {
-            background: rgba(139, 92, 246, 0.1);
-            color: var(--neon-violet);
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            border: 1px solid rgba(139, 92, 246, 0.3);
-        }
-
         /* Projects Section */
         .projects-grid {
             display: grid;
@@ -384,25 +346,6 @@
             margin-bottom: 0.5rem;
         }
 
-        .project-status {
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
-        }
-
-        .status-completed {
-            background: rgba(34, 197, 94, 0.1);
-            color: #22c55e;
-            border: 1px solid rgba(34, 197, 94, 0.3);
-        }
-
-        .status-development {
-            background: rgba(251, 191, 36, 0.1);
-            color: #fbbf24;
-            border: 1px solid rgba(251, 191, 36, 0.3);
-        }
-
         .project-description {
             color: var(--text-secondary);
             margin-bottom: 1.5rem;
@@ -419,17 +362,6 @@
         .project-links {
             display: flex;
             gap: 1rem;
-        }
-
-        .project-link {
-            color: var(--primary-violet);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .project-link:hover {
-            color: var(--neon-violet);
         }
 
         /* Contact Section */
@@ -480,6 +412,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -491,6 +424,7 @@
                 opacity: 0;
                 transform: translateX(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -553,224 +487,223 @@
         }
     </style>
 </head>
+
 <body>
-<nav class="navbar">
-    <div class="nav-container">
-        <div class="logo">{{ nickname }}</div>
-        <ul class="nav-links">
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
-        </ul>
-    </div>
-</nav>
-
-<section class="hero" id="home">
-    <div class="hero-container">
-        <div class="hero-content">
-            <h1>{{ full_name }}</h1>
-            <div class="subtitle">{{ role }}</div>
-            <p>{{ overview }}</p>
-            <div class="cta-buttons">
-                {% for action in actions %}
-                    <a
-                        class="{{ action.class_name }}"
-                        href="{{ action.href }}"
-                        {% if action.target %} target="{{ action.target }}"{% endif %}
-                    >{{ action.title }}</a>
-                {% endfor %}
-            </div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">{{ nickname }}</div>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
         </div>
-        <div class="hero-visual">
-            <div class="code-window">
-                <div class="code-header">
-                    <div class="code-dot dot-red"></div>
-                    <div class="code-dot dot-yellow"></div>
-                    <div class="code-dot dot-green"></div>
-                </div>
-                <div class="code-content">
-                    <div class="code-line"><span class="keyword">from</span> fastapi <span class="keyword">import</span>
-                        FastAPI
-                    </div>
-                    <div class="code-line"><span class="keyword">import</span> uvicorn</div>
-                    <div class="code-line"></div>
-                    <div class="code-line">app = <span class="string">FastAPI()</span></div>
-                    <div class="code-line"></div>
-                    <div class="code-line"><span class="comment"># Building the future</span></div>
-                    <div class="code-line"><span class="comment"># one API at a time</span></div>
-                    <div class="code-line"></div>
-                    <div class="code-line">@app.<span class="keyword">get</span>(<span class="string">"/"</span>)</div>
-                    <div class="code-line"><span class="keyword">def</span> <span class="string">welcome()</span>:</div>
-                    <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> <span
-                            class="string">"¡Hola mundo!"</span></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </nav>
 
-<section class="section" id="about">
-    <h2 class="section-title">Sobre mí</h2>
-    <div class="about-grid">
-        <div class="about-text">
-            {% for item in description %}
-            <p>{{ item }}</p>
-            {% endfor %}
-        </div>
-
-        <div class="tech-stack">
-            {% for tech in tech_stack %}
-            <div class="tech-category">
-                <h3>{{ tech.title }}</h3>
-                <div class="tech-tags">
-                    {% for tag in tech.tags %}
-                    <span class="tech-tag">{{ tag }}</span>
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>{{ full_name }}</h1>
+                <div class="subtitle">{{ role }}</div>
+                <p>{{ overview }}</p>
+                <div class="cta-buttons">
+                    {% for action in actions %}
+                    {{ button(action.title, action.url, action.is_external_app, action.variant.value) }}
                     {% endfor %}
                 </div>
             </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<section class="section" id="projects">
-    <h2 class="section-title">Proyectos Destacados</h2>
-    <div class="projects-grid">
-        {% for project in projects %}
-        <div class="project-card">
-            <div class="project-header">
-                <div>
-                    <h3 class="project-title">{{ project.title }}</h3>
-                    <div class="{{ project.status.class_name }}">{{ project.status.title }}</div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-header">
+                        <div class="code-dot dot-red"></div>
+                        <div class="code-dot dot-yellow"></div>
+                        <div class="code-dot dot-green"></div>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line"><span class="keyword">from</span> fastapi <span
+                                class="keyword">import</span>
+                            FastAPI
+                        </div>
+                        <div class="code-line"><span class="keyword">import</span> uvicorn</div>
+                        <div class="code-line"></div>
+                        <div class="code-line">app = <span class="string">FastAPI()</span></div>
+                        <div class="code-line"></div>
+                        <div class="code-line"><span class="comment"># Building the future</span></div>
+                        <div class="code-line"><span class="comment"># one API at a time</span></div>
+                        <div class="code-line"></div>
+                        <div class="code-line">@app.<span class="keyword">get</span>(<span class="string">"/"</span>)
+                        </div>
+                        <div class="code-line"><span class="keyword">def</span> <span class="string">welcome()</span>:
+                        </div>
+                        <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> <span
+                                class="string">"¡Hola mundo!"</span></div>
+                    </div>
                 </div>
             </div>
-            <p class="project-description">{{ project.description }}</p>
-            <div class="project-tech">
-                {% for technology in project.tech_stack %}
-                <span class="tech-tag">{{ technology }}</span>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <h2 class="section-title">Sobre mí</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                {% for item in description %}
+                <p>{{ item }}</p>
                 {% endfor %}
             </div>
-            <div class="project-links">
-                <a class="project-link" href="{{ project.href }}" target="_blank">Ver en GitHub →</a>
+
+            <div class="tech-stack">
+                {% for tech in tech_stack %}
+                <div class="tech-category">
+                    <h3>{{ tech.title }}</h3>
+                    <div class="tech-tags">
+                        {% for tag in tech.tags %}
+                        {{ chip(tag, type="primary") }}
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
             </div>
         </div>
-        {% endfor %}
-    </div>
-</section>
+    </section>
 
-<section class="section" id="contact">
-    <h2 class="section-title">Contacto</h2>
-    <div class="contact-container">
-        <p class="contact-text">
-            ¿Interesado en trabajar juntos o tienes alguna pregunta? No dudes en contactarme a través de cualquiera de
-            estos medios.
-        </p>
-        <div class="contact-links">
-            {% for contact_link in contact %}
-            <a
-                    class="contact-link"
-                    href="{{ contact_link.href }}"
-                    {% if contact_link.target %} target="{{ contact_link.target }}"{% endif %}>
-                <span>{{ contact_link.icon }}</span> {{ contact_link.title }}
-            </a>
+    <section class="section" id="projects">
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <div class="projects-grid">
+            {% for project in projects %}
+            <div class="project-card">
+                <div class="project-header">
+                    <div>
+                        <h3 class="project-title">{{ project.title }}</h3>
+                        {{ chip(project.status.title, type=project.status.variant.value) }}
+                    </div>
+                </div>
+                <p class="project-description">{{ project.description }}</p>
+                <div class="project-tech">
+                    {% for technology in project.tech_stack %}
+                    {{ chip(technology, type="primary") }}
+                    {% endfor %}
+                </div>
+                <div class="project-links">
+                    {{ button("Ver en GitHub →", project.url, "_blank", "base") }}
+                </div>
+            </div>
             {% endfor %}
         </div>
-    </div>
-</section>
+    </section>
 
-<footer class="footer">
-    <p>&copy; 2025 {{ full_name }}. Desarrollado con pasión y mucho café ☕</p>
-</footer>
+    <section class="section" id="contact">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact-container">
+            <p class="contact-text">
+                ¿Interesado en trabajar juntos o tienes alguna pregunta? No dudes en contactarme a través de cualquiera
+                de
+                estos medios.
+            </p>
+            <div class="contact-links">
+                {% for contact_link in contact %}
+                <a class="contact-link" href="{{ contact_link.href }}" {% if contact_link.target %}
+                    target="{{ contact_link.target }}" {% endif %}>
+                    <span>{{ contact_link.icon }}</span> {{ contact_link.title }}
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
 
-<script>
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                const offsetTop = target.offsetTop - 80;
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
+    <footer class="footer">
+        <p>&copy; 2025 {{ full_name }}. Desarrollado con pasión y mucho café ☕</p>
+    </footer>
 
-    // Intersection Observer for animations
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, observerOptions);
-
-    // Observe all sections and cards
-    document.querySelectorAll('.section, .project-card, .tech-category').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(el);
-    });
-
-    // Active navigation link
-    window.addEventListener('scroll', () => {
-        const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('.nav-links a');
-
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 100;
-            const sectionHeight = section.clientHeight;
-            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-                current = section.getAttribute('id');
-            }
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
         });
 
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
-            }
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections and cards
+        document.querySelectorAll('.section, .project-card, .tech-category').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
         });
-    });
 
-    // Add some sparkle animation to the background
-    function createSparkle() {
-        const sparkle = document.createElement('div');
-        sparkle.style.position = 'fixed';
-        sparkle.style.width = '2px';
-        sparkle.style.height = '2px';
-        sparkle.style.background = 'var(--neon-violet)';
-        sparkle.style.borderRadius = '50%';
-        sparkle.style.pointerEvents = 'none';
-        sparkle.style.zIndex = '1';
-        sparkle.style.left = Math.random() * window.innerWidth + 'px';
-        sparkle.style.top = Math.random() * window.innerHeight + 'px';
-        sparkle.style.animation = 'sparkle 2s ease-out forwards';
+        // Active navigation link
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-links a');
 
-        document.body.appendChild(sparkle);
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
 
-        setTimeout(() => {
-            sparkle.remove();
-        }, 2000);
-    }
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
 
-    // Create sparkles periodically
-    setInterval(createSparkle, 3000);
+        // Add some sparkle animation to the background
+        function createSparkle() {
+            const sparkle = document.createElement('div');
+            sparkle.style.position = 'fixed';
+            sparkle.style.width = '2px';
+            sparkle.style.height = '2px';
+            sparkle.style.background = 'var(--neon-violet)';
+            sparkle.style.borderRadius = '50%';
+            sparkle.style.pointerEvents = 'none';
+            sparkle.style.zIndex = '1';
+            sparkle.style.left = Math.random() * window.innerWidth + 'px';
+            sparkle.style.top = Math.random() * window.innerHeight + 'px';
+            sparkle.style.animation = 'sparkle 2s ease-out forwards';
 
-    // Add sparkle animation keyframes
-    const style = document.createElement('style');
-    style.textContent = `
+            document.body.appendChild(sparkle);
+
+            setTimeout(() => {
+                sparkle.remove();
+            }, 2000);
+        }
+
+        // Create sparkles periodically
+        setInterval(createSparkle, 3000);
+
+        // Add sparkle animation keyframes
+        const style = document.createElement('style');
+        style.textContent = `
             @keyframes sparkle {
                 0% {
                     opacity: 0;
@@ -786,7 +719,8 @@
                 }
             }
         `;
-    document.head.appendChild(style);
-</script>
+        document.head.appendChild(style);
+    </script>
 </body>
+
 </html>

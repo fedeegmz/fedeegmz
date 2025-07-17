@@ -1,0 +1,32 @@
+{% macro chip(text, type='success') %}
+<style>
+    .chip {
+        padding: 0.25rem 0.75rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .chip-primary {
+        background: rgba(139, 92, 246, 0.1);
+        color: var(--neon-violet);
+        font-size: 0.9rem;
+        border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+
+    .chip-success {
+        background: rgba(34, 197, 94, 0.1);
+        color: #22c55e;
+        border: 1px solid rgba(34, 197, 94, 0.3);
+    }
+
+    .chip-warning {
+        background: rgba(251, 191, 36, 0.1);
+        color: #fbbf24;
+        border: 1px solid rgba(251, 191, 36, 0.3);
+    }
+</style>
+<span class="chip chip-{{ type }}">
+    {{ text }}
+</span>
+{% endmacro %}
