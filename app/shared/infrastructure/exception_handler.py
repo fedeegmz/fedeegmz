@@ -24,3 +24,12 @@ def exception_handler(app: FastAPI) -> None:
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             content={"success": False, "message": exc.message, "data": None},
         )
+
+    @app.exception_handler(exceptions.InternalException)
+    def internal_exception_handler(
+        _: Request, exc: exceptions.InternalException
+    ) -> JSONResponse:
+        return JSONResponse(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            content={"success": False, "message": exc.message, "data": None},
+        )
