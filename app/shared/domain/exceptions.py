@@ -17,3 +17,8 @@ class UninitializedException(AppException):
 class DatabaseConnectionException(AppException):
     def __init__(self, detail: str | None = None) -> None:
         super().__init__("Database connection error", detail)
+
+
+class InternalException(AppException):
+    def __init__(self, message: str, detail: str | None = None) -> None:
+        super().__init__(message, detail)

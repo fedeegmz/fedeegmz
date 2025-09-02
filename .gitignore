@@ -375,3 +375,9 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# GCP
+gcp-credentials.json
+
+# Docker
+docker-compose.yaml
