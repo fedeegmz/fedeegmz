@@ -5,7 +5,12 @@ from app.context.infrastructure.di import ContextRepositoryDi
 from app.shared.infrastructure.di.templates import TemplatesDi
 from app.shared.infrastructure.exception_handler import exception_handler
 
-app = FastAPI()
+app = FastAPI(
+    version="0.1.0",
+    openapi_url=None,
+    docs_url=None,
+    redoc_url=None,
+)
 exception_handler(app)
 
 
