@@ -8,6 +8,8 @@ COPY pyproject.toml uv.lock ./
 
 RUN uv sync --frozen --no-cache
 
+COPY .env .env
+COPY gcp-credentials.json gcp-credentials.json
 COPY ./app ./app
 COPY ./templates ./templates
 
