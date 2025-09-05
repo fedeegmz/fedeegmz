@@ -3,18 +3,23 @@ import os
 from functools import lru_cache
 from typing import Any
 
+from google.auth.exceptions import DefaultCredentialsError
 from google.cloud import storage
 
 from app.shared.domain.exceptions import InternalException
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "gcp-credentials.json"
-
 
 class GCPStorageBucket:
     def __init__(self, bucket_name: str):
-        self.client = storage.Client()
         self.bucket_name = bucket_name
-        self.bucket = self.client.bucket(bucket_name)
+        try:
+            if os.path.exists("gcp-credentials.json"):
+                os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "gcp-credentials.json"
+            self.client = storage.Client()
+            self.bucket = self.client.bucket(bucket_name)
+        except DefaultCredentialsError:
+            self.client = None
+            self.bucket = None
 
     @lru_cache(maxsize=1)
     def load_data(self, file_path: str) -> dict[str, Any]:
