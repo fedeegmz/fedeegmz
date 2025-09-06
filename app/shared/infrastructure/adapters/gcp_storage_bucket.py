@@ -22,7 +22,7 @@ class GCPStorageBucket:
             self.bucket = None
 
     @lru_cache(maxsize=1)
-    def load_data(self, file_path: str) -> dict[str, Any]:
+    def load_data(self, file_path: str) -> dict[str, Any] | list[dict[str, Any]]:
         try:
             blob = self.bucket.blob(file_path)
             if not blob.exists():
