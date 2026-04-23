@@ -1,25 +1,36 @@
-# fedeegmz
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Python Developer 🐍
+## Getting Started
 
-### Hey, I'm Federico Gomez 👋
+First, run the development server:
 
-I'm a **backend developer** from Argentina. 🌎
-Currently, I am working at [**Tinkin**](https://www.tinkin.one/) as a full stack developer. 🖥️
-I've built many backend applications using FastAPI, Django, and Django Rest Framework.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-As a hobby, I started [**Nester**](https://github.com/fedeegmz/nester), a CLI built with Rust that allows you to create
-files based on templates. I also created [Beauty Prints](https://github.com/fedeegmz/beauty-prints), a Visual Studio
-Code extension that makes debugging easier by inserting print statements with a single command.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Additionally, I developed [youtube-pydantic-models](https://github.com/fedeegmz/youtube-pydantic-models), a Python
-library with YouTube models based on Pydantic.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-You can find some of my most important projects **pinned** below. 👇👇
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-### Contact
+## Learn More
 
-- [My website](https://portfolio-328026663969.us-south1.run.app/)
-- [GitHub as @fedeegmz](https://github.com/fedeegmz) **(You're here)**
-- [LinkedIn](https://www.linkedin.com/in/federico00gomez/)
-- Email: [**gomez00federico@gmail.com**](gomez00federico@gmail.com)
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
