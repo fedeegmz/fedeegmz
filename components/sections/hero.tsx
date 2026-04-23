@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
+import { Mail, ChevronDown } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "@/components/ui/social-icons";
 import { HeroData } from "@/lib/types";
 
 interface HeroProps {
@@ -9,8 +10,8 @@ interface HeroProps {
 }
 
 const iconMap = {
-  github: Github,
-  linkedin: Linkedin,
+  github: GithubIcon,
+  linkedin: LinkedinIcon,
   email: Mail,
 };
 

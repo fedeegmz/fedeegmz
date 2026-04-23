@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, ArrowUpRight } from "lucide-react";
+import { Mail, ArrowUpRight } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "@/components/ui/social-icons";
 import { ContactData } from "@/lib/types";
 
 interface ContactProps {
@@ -17,13 +18,13 @@ export function Contact({ data }: ContactProps) {
       value: data.email,
     },
     {
-      icon: Linkedin,
+      icon: LinkedinIcon,
       label: "LinkedIn",
       href: data.linkedinUrl,
       value: "Connect on LinkedIn",
     },
     {
-      icon: Github,
+      icon: GithubIcon,
       label: "GitHub",
       href: data.githubUrl,
       value: "View my repos",

@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ExternalLink, Github, X } from "lucide-react";
+import { ExternalLink, X } from "lucide-react";
+import { GithubIcon } from "@/components/ui/social-icons";
 import { Project } from "@/lib/types";
 
 interface ProjectsProps {
@@ -173,7 +174,7 @@ function ProjectModal({ project, onClose }: ProjectModalProps) {
               rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-lg bg-foreground/10 px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-foreground/20"
             >
-              <Github className="h-4 w-4" />
+              <GithubIcon className="h-4 w-4" />
               View Code
             </a>
           )}
