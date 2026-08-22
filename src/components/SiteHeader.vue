@@ -1,14 +1,14 @@
 <script setup lang="ts">
 defineProps<{
   name: string
-  tagline: string
+  description: string
 }>()
 </script>
 
 <template>
   <header class="site-header">
     <h1>{{ name }}</h1>
-    <p>{{ tagline }}</p>
+    <p>{{ description }}</p>
   </header>
 </template>
 
