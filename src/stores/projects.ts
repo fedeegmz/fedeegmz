@@ -34,6 +34,21 @@ export const useProjectsStore = defineStore('projects', () => {
       url: 'https://gastubela.fedeegmz.com',
       repositoryUrl: 'https://github.com/fedeegmz/gastubela-web',
     },
+    {
+      id: 'youtube-pydantic-models',
+      name: 'YouTube Pydantic Models',
+      description: 'Librería de Python con modelos de YouTube basados en Pydantic',
+      url: 'https://pypi.org/project/youtube-pydantic-models/',
+      repositoryUrl: 'https://github.com/fedeegmz/youtube-pydantic-models',
+    },
+    {
+      id: 'beauty-prints',
+      name: 'Beauty Prints',
+      description:
+        'Extensión de VS Code que facilita el debugging insertando print statements con un comando',
+      url: 'https://marketplace.visualstudio.com/items?itemName=fedeegmz.beauty-prints',
+      repositoryUrl: 'https://github.com/fedeegmz/beauty-prints',
+    },
   ])
 
   return { projects }
