@@ -17,6 +17,7 @@ export const useProjectsStore = defineStore('projects', () => {
       description:
         'Herramienta open source para retrospectivas de equipo en tiempo real, self-hosteable',
       url: 'https://openretro.app',
+      repositoryUrl: 'https://github.com/fedeegmz/open-retro',
     },
     {
       id: 'overlays',
@@ -24,12 +25,14 @@ export const useProjectsStore = defineStore('projects', () => {
       description:
         'App de escritorio para servir y controlar en vivo zócalos y títulos como Browser Source de OBS',
       url: 'https://overlays.fedeegmz.com',
+      repositoryUrl: 'https://github.com/fedeegmz/overlays',
     },
     {
       id: 'gastubela',
       name: 'Gastubela',
       description: 'App para dividir gastos con amigos',
       url: 'https://gastubela.fedeegmz.com',
+      repositoryUrl: 'https://github.com/fedeegmz/gastubela-web',
     },
   ])
 
