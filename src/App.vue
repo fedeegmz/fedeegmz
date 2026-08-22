@@ -1,11 +1,24 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SiteHeader from '@/components/SiteHeader.vue'
+import ProjectList from '@/components/ProjectList.vue'
+import SiteFooter from '@/components/SiteFooter.vue'
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <main class="container">
+    <SiteHeader
+      name="Federico"
+      tagline="Desarrollador backend, mobile y algunas cosas de frontend."
+    />
+    <ProjectList />
+    <SiteFooter name="Federico" />
+  </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+.container {
+  width: 100%;
+  max-width: 640px;
+  margin-inline: auto;
+}
+</style>

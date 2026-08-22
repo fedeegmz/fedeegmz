@@ -15,6 +15,7 @@
     "format": "oxfmt src/"
   },
   "dependencies": {
+    "pinia": "^4.0.3",
     "vue": "^3.5.40"
   },
   "devDependencies": {
