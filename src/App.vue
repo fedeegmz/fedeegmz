@@ -10,17 +10,27 @@ const { profile, fullName } = storeToRefs(store)
 </script>
 
 <template>
-  <main class="container">
-    <SiteHeader :name="fullName" :description="profile.description" />
-    <ProjectList />
-    <SiteFooter :name="fullName" />
-  </main>
+  <div class="layout">
+    <main class="container">
+      <SiteHeader :name="fullName" :description="profile.description" />
+      <ProjectList />
+    </main>
+    <SiteFooter :name="fullName" :contact="profile.contact" />
+  </div>
 </template>
 
 <style scoped>
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
 .container {
   width: 100%;
   max-width: 640px;
   margin-inline: auto;
+  padding: 4rem 1.5rem 3.5rem;
+  flex: 1;
 }
 </style>
